@@ -1,0 +1,9 @@
+name: tests
+on:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+
+jobs:
+  unit-tests:
+    uses: oclif/github-_workflows/.github/_workflows/unitTest.yml@main
